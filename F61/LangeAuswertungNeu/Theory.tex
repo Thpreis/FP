@@ -1,0 +1,39 @@
+\section{Theory}
+\subsection{Relaxation time}
+A macroscopic probe consists of many atoms, each of which with a nucleus carrying a spin and thus a magnetic dipole moment $\mu _I = \hbar \gamma _I \vec{I}$. The spins try to align either in a parallel or an antiparallel way with respect to an external magnetic field $B_0$. Restricting the discussion to protons we expect an effective magnetization in direction of $\vec{B}_0$ due to them having the tendency to occupy the energetically more favorable state, according to the Fermi-Dirac statistic. Disrupting the macroscopic magnetization from equilibrium will always lead to the same macroscopic magnetization after some time, because the system wants to minimize its total energy according to the principle of least action. This process is called relaxation and we distinguish between two different kinds of relaxation.\cite{manual} \cite{MRI}
+
+\subsubsection{Spin-Spin relaxation $T_2$}
+The spin-spin relaxation is caused by the interaction between distinct spins amongst themselves. The transverse magnetization gets decreased via the dephasing of the coherent movement of the spin magnetic moments. The characteristic relaxation time of this process is called spin-spin relaxation time $T_2$.
+The Bloch equations describe the time evolution of the magnetization subject to relaxation. From them one can derive the time evolution of the transverse magnetization to be determined by the spin-spin relaxation time via \cite{manual}
+\begin{equation}
+	M_{\perp} (t) = M^0 _{\perp}\, e^{-\frac{t}{T_2}}\mathrm{.}
+	\label{eq:1}
+\end{equation}
+\subsubsection{Spin-Lattice relaxation time $T_1$}
+ The spin-lattice relaxation time describes the interaction between the spins with the external magnetic field. The energy emitted by a system out of equilibrium dissipating to its equilibrium state, thus attaining an effective equilibrium magnetization, is absorbed by the lattice. The characteristic time scale of this relaxation process caused in this interaction is called spin-lattice relaxation time $T_1$. The time evolution of the magnetization component (anti-)parallel to the external magnetic field $B_0$ is again determined by the Bloch equations via the spin-lattice relaxation time to be \cite{manual} \cite{MRI}
+ \begin{equation}
+ 	M_{\parallel}(t) = M^0 _{\parallel} \, \left(1-2\, e^{-\frac{t}{T_1}}\right)\mathrm{.}
+ 	\label{eq:2}
+ \end{equation}
+
+\subsection{Chemical shift}
+Chemical shift is, besides dipole-dipole interaction and internal coupling, one of the main internal interactions of magnetic dipole moments. It accounts for an additional magnetic field caused by the electrons surrounding the magnetic dipole moments of the nucleus. The factor of proportionality between the additional and the external magnetic field is molecule specific and is called magnetic shielding factor (measured in parts per million). The Hamiltonian of the observed system is given by 
+\begin{equation}
+	H = H_Z + H_C + H_J + H_D\mathrm{,}
+	\label{eq:3}
+\end{equation}  
+where $H_Z$ represents the Zeeman splitting caused by the external magnetic field $B_0$ and $H_D$ accounts for the dipole-dipole interaction (is averaged out in fluids). The electrons weaken the magnetic field around the nucleus proportionally to the external magnetic field, following Lenz´s law, which in turn results in the chemical shift $H_C = \hbar \gamma \sigma \vec{I}\vec{B}_0$. The additional term $H_J = J_{12} \vec{I}_1 \vec{I}_2$ is caused by the indirect coupling between two magnetic dipole moments in a molecule via the electrons, $J_{12} $ describes the coupling factor.
+The Brownian motion is responsible for averaging out the splitting of the spectrum caused by the indirect coupling in different molecules.\cite{Hornak} \cite{IndirectCoupling}
+
+\subsection{Imaging with NMR}
+\label{sec:3}
+A static, spatially homogeneous magnetic field is not sufficient for image taking, because all spins would have the same Larmor frequency. One excitation pulse would therefore always excite the entire sample. We can spatially localize the amount of hydrogen atoms at one point by applying a gradient field, because the Larmor frequency is proportional to the magnetic field, which in turn is proportional to the spatial position.
+We can split the sample into slices in e.g. the xy-plane by applying a magnetic gradient in z-direction, because this results in the precession motion of every slice to have a different Larmor frequency:
+\begin{equation}
+	\omega _{Larmor} = \gamma \left(B_0+ B^z (z)\right)\mathrm{.}
+	\label{eq:4}
+\end{equation}
+One can therefore guarantee spins of a specific slice to go in resonance with the frequency applied to the rotating magnetic field and then measure the relaxation time, this is called frequency coding. The stronger the applied magnetic gradient the thinner a given slice in the xy-plane becomes.\\
+We can furthermore apply a phase encoding gradient to dephase spins along the vertical axis (y-axis). The gradient is only applied for a short amount of time such that, after the gradient has been shut down, we observe several phases between the spins along the y-axis, hence we now can decode the y-position via the phase with a spin echo measurement (compare section \ref{sec:1}), this is called phase coding. The resolution of this localization is limited by the measurement only being able to distinguish two phases with a difference less than $2 \pi$.\\
+We can finally apply a third gradient field in x-direction during the echo, this results in the z-gradient field to increase along the x-direction such that the Larmor frequencies along the x-axis increase with an increase in magnetic field strength. The measured echo of the magnetic resonance signal now consists of a broad frequency spectrum, but now we can identify the spatial point via the specific Larmor frequency. One can then use either frequency or phase coding in order to acquire a 1D image of the sample via a 1D Fourier transformation of the measured NMR signal, where every point in position space corresponds either to a specific frequency or a specific phase.\\
+One can also use both methods in order to make a 2D image measurement. One first selects a slice by an appropriate combination of gradient field and high frequency pulse. Within the slice, 2D position information is derived by a combination of phase coding in x-direction and frequency coding in y-direction. One then proceeds to make N measurements, each consisting of a combination of frequency and phase coding, with different values of the phase coding gradients in x-direction. During every measurement the NMR signal is read out at different times $t_m$ with $m \in \{1,M\}$. The $2\times2$ D matrix of the image is then finally derived via a two dimensional Fourier transformation of the matrix consisting of $N\times M$ data points.\cite{manual} \cite{ernst1987principles}

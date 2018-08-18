@@ -1,0 +1,9 @@
+Read the paper «A damage-tolerant glass» by Demetriou et al., Nature Materials, Vol. 10, p. 123 (2011).
+Explain the main findings of this work. Make sure that you include an answer to the following questions in your text
+
+- What is a metallic glass?
+- What is the main difference in mechanical properties between oxide and metallic glasses?
+- Explain the characteristics of the X-ray diffraction pattern in Fig. 1. Why is there only a single peak?
+- Why are the metallic glasses particularly damage tolerant?
+- What do you think could be a limiting factor in introducing this kind of material to the commercial 
+market?

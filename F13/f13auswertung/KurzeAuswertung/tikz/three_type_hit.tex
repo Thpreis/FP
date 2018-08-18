@@ -1,0 +1,18 @@
+\begin{tikzpicture}
+    %Plane
+    \draw (0,0) -- (0,4) -- (2,4) -- (2,0) -- (0,0);
+    %wire+diag+perp
+    \draw [blue,thick] (0.5,0) -- (0.5,4);
+    \draw [olive,thick] (0,2.5) -- (2,1.5); 
+    \draw [red,thick] (0,2) -- (2,2); 
+    %intersection
+    \draw [fill, violet] (0.5,2.25) circle [radius=0.02];
+    \draw [fill, violet] (0.5,2) circle [radius=0.02];
+    \draw [fill, violet] (1,2) circle [radius=0.02];
+    %labels
+    \draw [dotted] (0.63,2.08) -- (0,2.08);
+    \draw [dotted] (0.63,2.08) -- (0.63,0);
+    \draw [fill, violet] (0.63,2.08) circle [radius=0.05];
+    \node [left] at (0,2.08) {\footnotesize y}; 
+    \node [below] at (0.63,0) {\footnotesize x}; 
+\end{tikzpicture}

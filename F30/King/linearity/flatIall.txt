@@ -1,0 +1,15 @@
+flatVRange0000.fits
+flatVRange0001.fits
+flatVRange0002.fits
+flatVRange0003.fits
+flatVRange0004.fits
+flatVRange0005.fits
+flatVRange0006.fits
+flatVRange0007.fits
+flatVRange0008.fits
+flatVRange0009.fits
+flatVRange0010.fits
+flatVRange0011.fits
+flatVRange0012.fits
+flatVRange0013.fits
+flatVRange0014.fits

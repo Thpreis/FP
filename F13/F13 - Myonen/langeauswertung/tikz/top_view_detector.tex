@@ -1,0 +1,60 @@
+\begin{tikzpicture}
+    %Plane
+    \draw [thick] (0,0) -- (0,4) -- (2,4) -- (2,0) -- (0,0);
+    %Wires
+    \draw [blue] (0.25,0) -- (0.25,4);
+    \draw [blue] (0.5,0) -- (0.5,4);
+    \draw [blue] (0.75,0) -- (0.75,4);
+    \draw [blue] (1,0) -- (1,4);
+    \draw [blue] (1.25,0) -- (1.25,4);
+    \draw [blue] (1.5,0) -- (1.5,4);
+    \draw [blue] (1.75,0) -- (1.75,4);
+    %Perpendiculars
+    \draw [red] (0,0.5) -- (2,0.5);
+    \draw [red] (0,1) -- (2,1);
+    \draw [red] (0,1.5) -- (2,1.5);
+    \draw [red] (0,2) -- (2,2);
+    \draw [red] (0,2.5) -- (2,2.5);
+    \draw [red] (0,3) -- (2,3);
+    \draw [red] (0,3.5) -- (2,3.5);
+    %Diagonals
+    \draw [olive] (0,0) -- (2,1);
+    \draw [olive] (0,1) -- (2,2);
+    \draw [olive] (0,2) -- (2,3);
+    \draw [olive] (0,3) -- (2,4);
+    %
+    \draw [->] (1,-0.1) -- (1,-0.4);
+    %side view wires
+    \draw [red] (0,-0.5) -- (2,-0.5);
+    \draw [olive] (0,-0.75) -- (2,-0.75);
+    %
+    \draw (0.00,-0.5) -- (0.00,-0.75);
+    \draw (0.25,-0.5) -- (0.25,-0.75);
+    \draw (0.50,-0.5) -- (0.50,-0.75);
+    \draw (0.75,-0.5) -- (0.75,-0.75);
+    \draw (1.00,-0.5) -- (1.00,-0.75);
+    \draw (1.25,-0.5) -- (1.25,-0.75);
+    \draw (1.50,-0.5) -- (1.50,-0.75);
+    \draw (1.75,-0.5) -- (1.75,-0.75);
+    \draw (2.00,-0.5) -- (2.00,-0.75);
+    %
+    \draw [fill, blue] (0.125,-0.625) circle [radius=0.01];
+    \draw [fill, blue] (0.375,-0.625) circle [radius=0.01];
+    \draw [fill, blue] (0.625,-0.625) circle [radius=0.01];
+    \draw [fill, blue] (0.875,-0.625) circle [radius=0.01];
+    \draw [fill, blue] (1.125,-0.625) circle [radius=0.01];
+    \draw [fill, blue] (1.375,-0.625) circle [radius=0.01];
+    \draw [fill, blue] (1.625,-0.625) circle [radius=0.01];
+    \draw [fill, blue] (1.875,-0.625) circle [radius=0.01];
+    %
+    %coordinatesystems
+    \draw [->, thick] (0,0) -- (0.5,0);
+    \draw [->, thick] (0,0) -- (0,0.5);
+    \node [below] at (0.5,0) {\tiny x};
+    \node [left] at (0,0.5) {\tiny y};
+    %
+    \draw [->, thick] (0,-0.75) -- (0,-0.5);
+    \draw [->, thick] (0,-0.75) -- (0.25,-0.75);
+    \node [left] at (0,-0.5) {\tiny z};
+    \node [below] at (0.25,-0.75) {\tiny x};
+\end{tikzpicture}

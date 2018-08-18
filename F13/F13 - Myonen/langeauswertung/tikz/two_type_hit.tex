@@ -1,0 +1,13 @@
+\begin{tikzpicture}
+    %Plane
+    \draw (0,0) -- (0,4) -- (2,4) -- (2,0) -- (0,0);
+    %wire+diag
+    \draw [blue,thick] (0.5,0) -- (0.5,4);
+    \draw [olive,thick] (0,2.5) -- (2,1.5); 
+    %intersection
+    \draw [fill, violet] (0.5,2.25) circle [radius=0.05];
+    %labels
+    \draw [dotted] (0,2.25) -- (0.5,2.25);
+    \node [left] at (0,2.25) {\footnotesize y}; 
+    \node [below] at (0.5,0) {\footnotesize x}; 
+\end{tikzpicture} 

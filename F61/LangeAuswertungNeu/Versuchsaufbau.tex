@@ -1,0 +1,10 @@
+\section{Versuchsaufbau}
+Der bei diesem Versuch verwendete Detektor ist in Abbildung \ref{fig:Abbildung 1} (a) zu sehen. Bei unserem Versuch waren jedoch nur PM0 bis PM5 funktionsfähig. Der genaue Versuchsaufbau ist [1] zu entnehmen. Bei eingeschaltetem Magnetfeld ändert sich die Zählrate im Szintillator ober- oder unterhalb der Metallplatte, in der das Myon zur Ruhe kommt, periodisch durch die Spinpräzession. Für einen festen Szintillator ergibt sich die zeitabhängige Zählrate durch:
+
+\begin{equation}
+	Z(t) = Z_0 \cdot e^{-\frac{t}{\tau}} \cdot \left(
+	1 + P\cdot A \cdot
+	cos\left(\omega _{Larmor} t+\phi \right)
+	\right)
+\end{equation}
+Die Zählrate hängt auch von dem Winkel $\phi$ zwischen Detektorausrichtung und Spinrichtung des Myons ab, der zu t=0 die Richtung ders Ausgangspolarisation festlegt. An die Szintillatoren sind Photomultiplier angeschlossen, deren Ausgänge wiederum mit Diskriminatoren verbunden sind. Die Schwellenwerte der Diskriminatoren werden über eine Logicbox angesteuert und erlauben somit eine Rauschunterdrückung.

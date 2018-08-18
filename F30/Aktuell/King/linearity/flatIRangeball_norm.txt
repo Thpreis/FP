@@ -1,0 +1,15 @@
+flatIRange0000_b_b.fits
+flatIRange0001_b_b.fits
+flatIRange0002_b_b.fits
+flatIRange0003_b_b.fits
+flatIRange0004_b_b.fits
+flatIRange0005_b_b.fits
+flatIRange0006_b_b.fits
+flatIRange0007_b_b.fits
+flatIRange0008_b_b.fits
+flatIRange0009_b_b.fits
+flatIRange0010_b_b.fits
+flatIRange0011_b_b.fits
+flatIRange0012_b_b.fits
+flatIRange0013_b_b.fits
+flatIRange0014_b_b.fits

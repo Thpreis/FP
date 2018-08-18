@@ -1,0 +1,5 @@
+flatI0000_b.fits
+flatI0001_b.fits
+flatI0002_b.fits
+flatI0003_b.fits
+flatI0004_b.fits

@@ -1,0 +1,3 @@
+template,s,a,"sensitivity_I_2_000*.fits",,,"file template"
+sort,b,h,yes,,,"sort file list"
+mode,s,h,"ql",,,

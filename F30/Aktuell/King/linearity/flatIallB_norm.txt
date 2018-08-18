@@ -1,0 +1,15 @@
+flatVRange0000_b_norm.fits
+flatVRange0001_b_norm.fits
+flatVRange0002_b_norm.fits
+flatVRange0003_b_norm.fits
+flatVRange0004_b_norm.fits
+flatVRange0005_b_norm.fits
+flatVRange0006_b_norm.fits
+flatVRange0007_b_norm.fits
+flatVRange0008_b_norm.fits
+flatVRange0009_b_norm.fits
+flatVRange0010_b_norm.fits
+flatVRange0011_b_norm.fits
+flatVRange0012_b_norm.fits
+flatVRange0013_b_norm.fits
+flatVRange0014_b_norm.fits

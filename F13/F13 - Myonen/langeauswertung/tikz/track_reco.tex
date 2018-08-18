@@ -1,0 +1,24 @@
+\begin{tikzpicture}
+    %detectorplanes
+    \draw (0,0) -- (1,1) -- (5,1) -- (4,0) -- (0,0);
+    \draw (0,1.5) -- (1,2.5) -- (5,2.5) -- (4,1.5) -- (0,1.5);
+    \draw (0,3) -- (1,4) -- (5,4) -- (4,3) -- (0,3);
+    %hit wires
+    \draw [blue] (0.25,0.25) -- (4.25,0.25);
+    \draw [blue] (0.5,2) -- (4.5,2);
+    \draw [blue] (0.75,3.75) -- (4.75,3.75);
+    %hit perps
+    \draw [red] (1,0) -- (2,1);
+    \draw [red] (2.25,1.5) -- (3.25,2.5);
+    %hit diags
+    \draw [olive] (0.65,0) -- (2.65,1);
+    \draw [olive] (2.25,3) -- (4.25,4);
+    %hit points
+    \draw [fill, violet] (1.245,0.27) circle [radius=0.05];
+    \draw [fill, violet] (2.75,2) circle [radius=0.05];
+    \draw [fill, violet] (3.75,3.75) circle [radius=0.05];
+    %track
+    \draw [darkgray] (0.755,-0.5) -- (4.45,4.5);
+    %label
+    \node [left] at (4.45,4.5) {\footnotesize track};
+\end{tikzpicture}

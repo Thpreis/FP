@@ -1,0 +1,28 @@
+\begin{tikzpicture}
+    %3 Planes:
+    \draw (0,0) -- (1,1) -- (5,1) -- (4,0) -- (0,0);
+    \draw (0,1.5) -- (1,2.5) -- (5,2.5) -- (4,1.5) -- (0,1.5);
+    \draw (0,3) -- (1,4) -- (5,4) -- (4,3) -- (0,3);
+    %
+    %labels for length,width and heigth
+    \draw [|<->|] (0,-0.2) -- (4,-0.2);
+    \node [below] at (2,-0.2) {\footnotesize length=4m};
+    \draw [|<->|] (4.1,-0.1) -- (5.1,0.9);
+    \node [below, rotate=45] at (4.6,0.4) {\footnotesize width=2m};
+    \draw [|<->|] (5.2,1) -- (5.2,4);
+    \node [below, rotate=90] at (5.2,2.5) {\footnotesize heigth=1.64m};
+    %
+    %coordinatesystem
+    \draw [->, thick] (1,2.5) -- (2,2.5);
+    \draw [->, thick] (1,2.5) -- (1,3.5);
+    \draw [->, thick] (1,2.5) -- (0.5,2);
+    %labels of coordinatesystem
+    \node [below] at (1,2.5) {\footnotesize 0};
+    \node [above] at (0.5,2) {\footnotesize x};
+    \node [above] at (1.9,2.5) {\footnotesize y};
+    \node [right] at (1,3.5) {\footnotesize z};
+    % Plane nodes
+    \node at (2.5,0.5) {\footnotesize \textit{bottomplane}};
+    \node at (2.5,2) {\footnotesize \textit{middleplane}};
+    \node at (2.5,3.5) {\footnotesize \textit{topplane}};
+\end{tikzpicture}

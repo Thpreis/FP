@@ -1,0 +1,10 @@
+\BOOKMARK [1][-]{Doc-Start}{Evaluation}{}% 1
+\BOOKMARK [2][-]{section*.1}{Properties of the dark current}{Doc-Start}% 2
+\BOOKMARK [2][-]{figure.caption.2}{Flat-Field correction}{Doc-Start}% 3
+\BOOKMARK [2][-]{figure.caption.4}{Linearity and dynamical range of the CCD}{Doc-Start}% 4
+\BOOKMARK [2][-]{figure.caption.5}{Sensitivity of the detector and noise properties}{Doc-Start}% 5
+\BOOKMARK [3][-]{section*.6}{4.5.3.1 Find and discuss the photon noise, the read-out noise, and the PRNU noise for one flat image. Which noise dominates? Explain}{figure.caption.5}% 6
+\BOOKMARK [3][-]{section*.6}{4.5.3.2 Plot the variance of the signal versus the signal itself for all measurements with increasing exposure times in the I-filter and extract the elextron sensitivity \040using eq. 23. Explain what this plot means}{figure.caption.5}% 7
+\BOOKMARK [3][-]{figure.caption.7}{4.5.3.3 Calculate the electron sensitivity \040using eq. \(19\) and explain discrepancies with the previous method. Do the calculation for just one image with average counts \04030000 ADU}{figure.caption.5}% 8
+\BOOKMARK [2][-]{figure.caption.7}{Color Magnitude Diagram}{Doc-Start}% 9
+\BOOKMARK [1][-]{figure.caption.9}{Discussion}{}% 10
